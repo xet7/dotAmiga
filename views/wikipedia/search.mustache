@@ -1,0 +1,16 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>Wikipedia</title>
+</head>
+<body>
+	{{> wikipedia/partials/title }}
+	{{> wikipedia/partials/search }}
+	<h2>Results</h2>
+	<ul>
+	{{#results}}
+		<li><a href="{{{url}}}">{{title}}</a></li>
+	{{/results}}
+	</ul>
+</body>
+<html>

@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>Wikipedia</title>
+</head>
+<body>
+	{{> wikipedia/partials/title }}
+	{{> wikipedia/partials/search }}
+	<h2>{{page.title}}</h2>
+	{{> wikipedia/partials/nav }}
+	<h3>{{page.section.title}}</h3>
+	{{{page.section.text}}}
+	<h3>Sections</h3>
+	<ol>
+	{{#page.sections}}
+		<li><a href="{{{url}}}">{{title}}</a></li>
+	{{/page.sections}}
+	</ol>
+</body>
+<html>
